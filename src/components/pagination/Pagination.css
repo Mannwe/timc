@@ -1,0 +1,55 @@
+.pagination-card{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light);
+    margin: 1rem auto;
+}
+
+.btn-pagination{
+    background-color: var(--dark);
+    border: 1px solid var(--light-gray);
+    color: var(--light)
+}
+
+.btn-pagination:hover{
+    background-color: var(--light-gray);
+    border: 1px solid var(--dark);
+    color: var(--dark);
+}
+
+.pagination-label{
+    color: var(--dark);
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------- RESPONSIVE ---------------------------------*/
+/*-----------------------------------------------------------------------------*/
+@media (max-width: 666px){
+    .pagination-label{
+        font-size: 0.8rem;
+    }
+
+    .pagination-card{
+        margin: 0.8rem auto;       
+    }
+
+    .btn-pagination{
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 425px){
+    .pagination-label{
+        font-size: 0.7rem;
+    }
+
+    .pagination-card{
+        margin: 0.7rem auto;       
+    }
+
+    .btn-pagination{
+        padding: 0.4rem;
+    }
+}

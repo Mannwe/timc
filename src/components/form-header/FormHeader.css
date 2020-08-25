@@ -1,0 +1,42 @@
+.form-header{
+    width: 100%;
+    display: flex;
+    background-color: var(--dark);
+    color: white;
+    font-size: 1rem;    
+    justify-content: space-evenly;
+    align-items: center;  
+    padding: 2.5rem 0.8rem;  
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------- RESPONSIVE ---------------------------------*/
+/*-----------------------------------------------------------------------------*/
+@media (max-width: 1500px){
+    .form-header{
+        font-size: 0.8rem;
+        padding: 2rem 0.6rem;
+    }
+}
+
+@media (max-width: 850px){
+    .form-header{
+        font-size: 0.7rem;
+        padding: 1.5rem 0.6rem;
+    }
+}
+
+@media (max-width: 550px){
+    .form-header{
+        font-size: 0.6rem;
+        padding: 1.3rem 0.6rem;
+    }
+}
+
+@media (max-width: 450px){
+    .form-header{
+        font-size: 0.4rem;
+        padding: 1.1rem 0.6rem;
+        letter-spacing: 0.1rem;
+    }
+}

@@ -1,0 +1,110 @@
+/* ul con la lista de selects  */
+.list-of-selectors{
+    width: 100%;
+}
+
+/* li con el selects del filtro */
+.filter-selector{
+    display: flex;
+    margin: 0.5rem 0;
+    justify-content: space-between;
+}
+
+.fields-block{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.filter-name{
+    width: 24%;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    color: var(--colorText);
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.filter-name:focus{
+    border: 1px solid var(--blue);
+    box-shadow: 0 0 0.5rem var(--blue) inset;
+}
+
+.filter-value{
+    width: 75%;
+    padding: 0.3rem;
+    font-family: var(--fontText);
+    font-size: 1.1rem;
+    color: var(--colorText);
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.filter-value:focus{
+    border: 1px solid var(--blue);
+    box-shadow: 0 0 0.5rem var(--blue) inset;
+}
+
+.filter-icon{
+    display: flex;
+    color: var(--colorHeader);
+    cursor: pointer;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-filter{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    color: var(--green)
+}
+
+.filter-template{
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.filter-field{
+    border-radius: 5px 5px;
+    border: 1px solid var(--light-gray);
+    outline: none;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------- RESPONSIVE ---------------------------------*/
+/*-----------------------------------------------------------------------------*/
+@media (max-width: 1250px){
+    .filter-field{
+        font-size: 1rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 1150px){
+    .filter-field{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1085px){
+    .filter-field{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 975px){
+    .fields-block{
+        flex-direction: column;
+    }
+    .filter-field{
+        width: 100%;
+        margin-top: 3px;
+    }
+}
+
+@media (max-width: 250px){
+    .filter-field{
+        font-size: 0.73rem;
+    }
+}

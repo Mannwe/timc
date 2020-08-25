@@ -1,0 +1,84 @@
+.filter-card{
+    width: 95%;
+    margin: 1rem auto;
+    border-radius: 0.2rem;
+    color: var(--light);
+}
+
+.card-header-filter{
+    display: flex;
+    background-color: var(--dark);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+    justify-content: space-between;
+}
+
+.card-header-filter span{
+    margin: 0.2rem 0.5rem;
+}
+
+.card-body-filter{
+    width: 100%;
+    min-height: 60px;
+    border-radius: 0 0 0.2rem 0.2rem;
+    padding: 0 0.6rem;
+}
+
+.card-body-filter-list{
+    display: flex;
+    align-items: center;
+}
+
+.actions-box{
+    display: grid;
+    width: 80px;
+    height: 20px;
+    margin-right: 0.4rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.action-box{
+    display: block;
+    height: 100%;
+    text-align: right;
+    cursor: pointer;
+    border: 1 solid var(--green);
+}
+
+.btn-filter{
+    margin: 1.2rem 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------- RESPONSIVE ---------------------------------*/
+/*-----------------------------------------------------------------------------*/
+@media (max-width: 1220px){
+    .btn{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 975px){
+    .filter-title{
+        font-size: 1rem;
+    }
+
+    .actions-box{
+        width: 50px;
+    }
+}
+
+@media (max-width: 700px){
+    .filter-title{
+        font-size: 0.9rem;
+    }
+
+    .actions-box{
+        width: 40px;
+    }
+}
+

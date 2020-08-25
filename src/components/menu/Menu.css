@@ -1,0 +1,57 @@
+.menu{
+    display: flex;
+    background-color: var(--dark);
+    color: white;
+    flex-direction: column;
+    height: auto;
+    min-height: calc(100vh - 5rem);
+}
+
+.menu-list{
+    padding: 0.8rem;
+}
+
+.menu-block{
+    padding: 1.5rem 0.5rem;
+    border-bottom: 1px solid var(--light)
+}
+
+.menu-item{
+    max-width: 200px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------- RESPONSIVE ---------------------------------*/
+/*-----------------------------------------------------------------------------*/
+@media (max-width: 1000px){
+    .menu-block{
+        padding: 1.2rem 0.3rem;
+    }    
+
+    .menu-item{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px){
+    .menu-list{
+        padding: 0.4rem;
+    }
+
+    .menu-block{
+        padding: 0.5rem 0.3rem;
+    }    
+
+    .menu-item{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 515px){
+    .menu{
+        display: block;
+        min-height: auto;
+    }
+}

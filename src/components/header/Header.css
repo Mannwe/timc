@@ -1,0 +1,96 @@
+.header{
+    display: flex;
+    width: 100%;
+    background-color: var(--dark);
+    color: white;
+    font-size: 0.7rem;    
+    justify-content: space-between;
+    align-items: center; 
+    min-height: 5rem;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header-title{
+    margin-left: 1rem;
+    color: var(--light);
+    font-weight: normal;
+}
+
+.header-session{
+    margin-right: 1rem;
+    font-size: 1rem;    
+    cursor: pointer;
+}
+
+.header-logo{
+    display: flex;    
+    align-items: center;
+}
+
+.header-brand{
+    font-family: Sriracha;
+    font-size: 2rem;
+}
+
+.logo-small{
+    display: none;
+}
+
+.logo-medium{
+    padding: 0 0.2rem 0 1rem;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------- RESPONSIVE ---------------------------------*/
+/*-----------------------------------------------------------------------------*/
+@media (max-width: 1000px){
+    .header-brand{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 975px){
+    .header-title{
+        font-size: 1.1rem;
+    }
+
+    .header-session{
+        font-size: 0.8rem;
+    }    
+}
+
+@media (max-width: 600px){
+    .header-brand{
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    .header-title{
+        margin-left: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .logo-medium{
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+        padding: 0 0.1rem 0 0.4rem;
+    }
+
+    .header-session{
+        font-size: 0.65rem;
+    }
+
+    .header{
+        min-height: 2.5rem;
+        height: 2.5rem;
+    }
+}

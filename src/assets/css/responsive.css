@@ -1,0 +1,269 @@
+/*-----------------------------------------------------------------------------*/
+/*----------------------------- LOGIN Y REGISTRO ------------------------------*/
+/*-----------------------------------------------------------------------------*/
+@media (max-width: 1600px){
+    .card{
+        width: 45%;
+        margin: 2rem auto;
+    }
+
+    .card-header h1{
+        font-size: 1.8rem;
+    }
+
+    .form-group{
+        width: calc(100% - 5rem);
+    }
+}
+
+@media (max-width: 1100px){
+    .card{
+        width: 55%;
+    }
+
+    .card-header h1{
+        font-size: 1.6rem;
+    }
+
+    .form-group{
+        width: calc(100% - 3rem);
+    }
+
+    .login-field{
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+
+    .login-new-user{
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 800px){
+    .card{
+        width: 65%;
+    }
+
+    .form-group{
+        width: calc(100% - 2rem);
+    }
+
+    .login-new-user{
+        margin-top: 0.2rem;
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 600px){
+    .card{
+        width: 75%;
+    }
+
+    .btn{
+        padding: 0.4rem;
+        font-size: 1.1rem;    
+    }
+
+    .login-new-user{
+        margin-top: 0.2rem;
+        font-size: 0.8rem; 
+    }
+}
+
+@media (max-width: 500px){
+    .card-header h1{
+        font-size: 1.4rem;
+    }
+
+    .login-field{
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+}
+
+@media (max-width: 400px){
+    .card{
+        width: 85%;
+    }
+
+    .card-header h1{
+        font-size: 1rem;
+    }
+
+    .form-group{
+        width: calc(100% - 1rem);
+    }
+
+    .login-field{
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+
+    .btn{
+        padding: 0.3rem;
+        font-size: 0.8rem;    
+    }
+
+    .login-new-user{
+        font-size: 0.7rem; 
+    }
+    
+}
+
+@media (max-width: 350px){
+    .card{
+        width: 95%;
+    }
+
+    .form-group{
+        width: calc(100% - 0.8rem);
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
+/*---------------------- PANTALLA PRINCIPAL Y FORMULARIOS ---------------------*/
+/*-----------------------------------------------------------------------------*/
+/*@media (max-width: 600px){
+    .main{
+        display: block;        
+    }
+}*/
+
+@media (max-width: 1600px){
+    .form-card{
+        width: 70%;
+    }
+
+    .form-line{
+        width: calc(100% - 7rem);
+        margin: 0 3.5rem;
+    }
+}
+
+@media (max-width: 1500px){
+    .form-card{
+        width: 75%;
+    }
+
+    .form-card-header{
+        font-size: 1.8rem;
+    }
+
+    .form-line{
+        width: calc(100% - 6rem);
+        margin: 0 3rem;
+    }    
+}
+
+@media (max-width: 1200px){
+    .form-card{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1000px){
+    .form-card{
+        width: 90%;
+    }
+
+    .form-card-header{
+        font-size: 1.6rem;
+    }
+
+    .form-line{
+        width: calc(100% - 5.6rem);
+        margin: 0 2.8rem;
+    }   
+    
+}
+
+@media (max-width: 900px){
+    .new-movie{
+        display: none;
+    }
+
+    .new-movie-sm{
+        display: block;
+    }   
+
+    .edit-movie{
+        display: none;
+    }
+
+    .edit-movie-sm{
+        display: block;
+    }   
+}
+
+@media (max-width: 850px){
+    .form-line{
+        width: calc(100% - 5rem);
+        margin: 0 2.5rem;
+    }
+}
+
+@media (max-width: 800px){
+    .form-card{
+        width: 95%;
+    }
+
+    .form-card-header{
+        font-size: 1.4rem;
+    }
+
+    .form-card-header{
+        margin: 1.5rem auto;
+    }
+}
+
+@media (max-width: 700px){
+    .form-line{
+        width: calc(100% - 4rem);
+        margin: 0 2rem;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .form-card-header{
+        font-size: 1.4rem;
+    }
+
+    .form-line{
+        width: calc(100% - 3rem);
+        margin: 0 1.5rem;
+    }
+
+    .form-card{
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 600px){
+    .form-card-header{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 350px){
+    .form-card-header{
+        font-size: 1rem;
+    }
+
+    .form-line{
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 250px){
+    .form-card-header{
+        font-size: 0.75rem;
+    }
+
+    .form-line{
+        width: calc(100% - 0.6rem);
+        margin: 0 0.3rem;
+    }    
+}
+

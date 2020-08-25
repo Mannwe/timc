@@ -1,13 +1,342 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*-----------------------------------------------------------------------------*/
+/*----------------------------- ESTILOS GENERALES -----------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Fuentes */
+@font-face{
+    font-family: 'Merriweather';
+    src: url('./assets/fonts/Merriweather-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Sriracha';
+    src: url('./assets/fonts/Sriracha-Regular.ttf');
+}
+
+/* Colores */
+:root {
+    --green: #558f39;
+    --light-green: #93c353;
+    --blue: #72a5f7;
+    --light-gray: #ced4da;
+    --light: #e9ecef;
+    --dark: #2E2E2D;
+    --error-bgcolor: #f8d7da;
+    --error-color-border: #f5c6cb;
+    --error-color: #721c24;
+    --red: #dc3545;
+    --success-color: #155724;
+    --success-color-border: #c3e6cb;
+    --success-bgcolor: #d4edda;
+    --colorHeader: #6c757d;
+    --colorText: #495057;
+    --fontText: 'Merriweather', sans-serif;
+    --login-elements-width: calc(100% - 10rem);
+}
+
+body{
+    background-color: var(--light-green);
+    font-family: var(--fontText);
+}
+
+/* Clases para el body durante el comportamiento modal */
+.modal-open{
+    filter: blur(1px) grayscale(30%);
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------- DIMENSIONES --------------------------------*/
+/*-----------------------------------------------------------------------------*/
+.w-20{
+    width: 20%;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.w-28{
+    width: 28%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-48{
+    width: 48%;
+}
+
+.w-75{
+    width: 75%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.card{
+    background-color: white;   
+    width: 35%;
+    margin: 3rem auto;
+    border-radius: 7px;
+    border: 1px solid var(--colorHeader);
+    box-shadow: 0 0 1px #222 inset;    
+}
+
+.card-header{
+    background-color: white;   
+    width: 100%;
+    margin: 0.25rem auto;
+    padding: 2rem;
+}
+
+.card-header h1{
+    font-size: 2.3rem;
+    text-align: center;
+    color: var(--colorHeader);
+    letter-spacing: 0.2rem;
+}
+
+.card-body{
+    display: block;
+    background-color: white;   
+    width: 100%;
+    margin: 0px auto;
+    padding: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------- FORMULARIOS --------------------------------*/
+/*-----------------------------------------------------------------------------*/
+.form-wrapper{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.form-line{ /* Para que todas las líneas empiecen en el mismo sitio */
+    display: flex;
+    width: calc(100% - 8rem); /* Para dejar el mismo margen (4rem) en cada lado */
+    justify-content: space-between;
+    margin: 0 4rem;
+}
+
+.form-field{
+    border-radius: 5px;
+    padding: 0.3rem;
+    border: 1px solid var(--light-gray);
+    font-family: var(--fontText);
+    font-size: 1.1rem;
+    color: var(--colorText);
+    outline: none;
+}
+
+.form-label{
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    margin: 0.3rem 0;
+    color: var(--colorText);
+}
+
+.btn-form{
+    width: 50%;
+}
+
+.form-group{
+    display: flex;
+    /*min-height: calc(1.6rem + .75rem + 2px);*/
+    width: var(--login-elements-width);
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.form-container{
+    background-color: var(--light-green);    
+}
+
+.form-card{
+    width: 60%;
+    padding: 1rem;
+}
+
+.form-card-header{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.login-field{
+    width: 92%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    padding: 0.7rem;
+    border: 1px solid var(--light);
+    font-size: 1.1rem;
+    color: var(--colorText);
+    outline: none;
+}
+
+.login-field:focus{
+    border: 1px solid var(--blue);
+    box-shadow: 0 0 0.5rem var(--blue) inset;
+}
+
+.input-icon{
+    width: 9%;
+    display: flex;
+    background-color: #e9ecef;
+    color: var(--colorText);
+    border-radius: 5px 0 0 5px;    
+    border-left: 1px solid var(--light);
+    border-top: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);    
+    justify-content: center;
+    align-items: center;    
+}
+
+/*-----------------------------------------------------------------------------*/
+/*---------------------------------- BOTONES ----------------------------------*/
+/*-----------------------------------------------------------------------------*/
+.btn{
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-size: 1.2rem;    
+    margin-top: 1rem;
+    box-shadow: 0 0 3px #ccc;
+    cursor: pointer;
+    outline: none;
+    transition: all 200ms ease;
+}
+
+.btn-ok{
+    color: white;
+    border: 1px solid var(--light);
+    background-color: var(--green);    
+}
+
+.btn-ok:hover{
+    background-color: var(--light-green);
+    border: 1px solid var(--green);
+}
+
+.btn-cancel{
+    color: white;
+    border: 1px solid var(--error-color-border);
+    background-color: var(--red);
+}
+
+.btn-cancel:hover{
+    color: var(--red);
+    border: 1px solid var(--error-color-border);
+    background-color: var(--error-color-border);
+}
+
+.btn-block{
+    width: 100%;
+}
+
+.btn-top{
+    margin-bottom: 0.8rem;
+}
+
+.btn-secondary{
+    color: var(--light);
+    border: 1px solid var(--light-gray);
+    background-color: var(--dark);
+}
+
+.btn-secondary:hover{
+    color: var(--dark);
+    border: 1px solid var(--colorHeader);
+    background-color: var(--light-gray);    
+}
+
+/*-----------------------------------------------------------------------------*/
+/*------------------------------ PÁGINA PRINCIPAL -----------------------------*/
+/*-----------------------------------------------------------------------------*/
+.container{
+    background-color: var(--light);   
+    margin: 0 auto;     
+}
+
+.main{
+    display: flex;
+}
+
+.content{
+    width: 100%;
+    background-color: var(--light-green);
+    border-right: 1px solid var(--light);
+    padding: 0.5rem;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*--------------------- ALTA Y MODIFICACIÓN DE PELÍCULAS ----------------------*/
+/*-----------------------------------------------------------------------------*/
+.login-new-user{
+    margin-top: 1rem;
+    color: var(--colorHeader);
+    font-style: italic;
+}
+
+.selected{  /* Sobre el tipo de alta: manual o importada, en NewMovie */
+    color: var(--green) !important;
+}
+
+.container > h1{
+    color: var(--colorText);
+    margin: 1.5rem;
+    border-bottom: 1px solid var(--dark);
+}
+
+.edit-movie-loan-date{
+    margin-right: 0.5rem;
+    width: 80%;
+}
+
+.form-icon{
+    cursor: pointer;
+}
+
+.edit-movie-title{
+    background-color: var(--light);
+}
+
+.new-movie-sm{
+    display: none;
+}
+
+.loan-data-sm{
+    display: none;
+}
+
+.loan-data-ssm{
+    display: none;
+}
+
+.edit-movie-sm{
+    display: none;
+}
+
+.edit-movie-title-line-sm{
+    display: none;
 }

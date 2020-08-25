@@ -1,0 +1,308 @@
+.new-movie-header{
+    width: 100%;
+    display: flex;
+    background-color: var(--dark);
+    color: white;
+    font-size: 0.7rem;    
+    justify-content: space-evenly;
+    align-items: center;  
+    padding: 2.5rem 0.8rem;  
+}
+
+.new-movie-header-label{
+    margin-left: 0 10px;
+    font-size: 1.5rem;    
+}
+
+.new-movie-header-label a{
+    color: var(--light);
+    transition: all 200ms ease;
+}
+
+.new-movie-header-label a:hover{
+    color: var(--light-green);
+}
+
+.movies-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 95%;
+    margin: 1rem auto;
+    border-radius: 0.2rem;
+    padding: 0 0.6rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+/* Estilos de las cajas de películas visualizadas en la lista */
+.movie-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.movie-wrapper{
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.movie-image{
+    border: 1px solid #ccc;
+    margin-right: 0.3rem;    
+}
+
+.image-cell{
+    vertical-align: top;
+}
+
+.movie-data,
+.movie-data-sm,
+.movie-data-ssm{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    color: var(--colorText);   
+    line-height: 1.5rem; 
+}
+.movie-data .movie-table{
+    width: 100%;
+}
+
+.movie-data .movie-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-data .movie-line label{
+    width: 10%;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.movie-data .movie-line-text{
+    width: 90%;    
+}
+
+.movie-data .movie-table .label-cell{
+    width: 4rem;
+}
+
+.movie-data .movie-table .description-cell{
+    width: 95%;
+}
+
+.plot{
+    height: 100%;
+    padding: 0.5rem;
+    overflow: hidden;
+    text-align: justify;
+    align-items: start;
+    vertical-align: top;
+    padding-top: 0.3rem;
+}
+
+.movie-data-sm{
+    display: none;
+}
+
+.movie-data-ssm{
+    display: none;
+}
+
+.movie-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-footer button:hover{
+    background-color: var(--colorHeader);
+}
+
+.edit-movie-header{
+    color: white;
+}
+
+.btn-movie{
+    margin-bottom: 0.5rem;    
+}
+
+.btn-dismiss{
+    cursor: pointer;
+    text-align: right;
+    font-size: 1.5rem;   
+    vertical-align: top;
+}
+
+.new-movie-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cursor-pointer *{
+    cursor: pointer;
+}
+
+.list-of-movies-header{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.the-movie-db-theme{
+    color: #01b4e4;
+}
+
+.info{
+    color: var(--colorHeader);
+    font-style: italic;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------- RESPONSIVE ---------------------------------*/
+/*-----------------------------------------------------------------------------*/
+@media (max-width: 1500px){
+    .form-label,
+    .form-field,
+    .new-movie-wrapper .btn{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1450px){
+    .info{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1100px){
+    .movie-table{
+        font-size: 0.9rem;        
+    }
+
+    .plot{
+        font-size: 0.9rem;        
+        margin-top: 0.2rem;
+    }
+}
+
+@media (max-width: 975px){
+    .info{
+        font-size: 0.7rem;        
+    }
+}
+
+@media (max-width: 900px){
+    .movie-table{
+        font-size: 0.8rem;        
+    }
+    
+    .plot{
+        font-size: 0.8rem;        
+    }    
+}
+
+@media (max-width: 800px){
+    .movie-data-sm{
+        display: table;
+    }
+
+    .movie-data-sm .cast{
+        height: 100%;
+        vertical-align: top;
+    }
+
+    .movie-data{
+        display: none;
+    }
+
+    .plot,
+    .label-cell,
+    .description-cell{
+        font-size: 0.7rem;
+    }
+
+    .form-label,
+    .form-field,
+    .new-movie-wrapper .btn{
+        font-size: 0.9rem;
+    }    
+}
+
+@media (max-width: 700px){
+    .new-movie-header{
+        padding: 1rem 0.2rem;
+    }
+
+    .new-movie-header-labe a{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px){
+    .new-movie-header{
+        flex-direction: column;
+        padding: 0.8rem 0.1rem;
+    }
+
+    .new-movie-header-label a{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 350px){
+    .form-label,
+    .form-field,
+    .new-movie-wrapper .btn{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 450px){
+    .movie-data{
+        display: none;
+    }
+
+    .movie-data-sm{
+        display: none;
+    }
+
+    .movie-data-ssm{
+        display: block;
+    }
+
+    .movie-wrapper{
+        padding: 0.4rem;
+        margin-bottom: 0.2rem;
+    }
+
+}
+
+@media (max-width: 350px){
+    .movie-data-ssm{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .btn-new-movie{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 300px){
+    .form-label,
+    .form-field,
+    .new-movie-wrapper .btn{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 250px){
+    .info{
+        font-size: 0.6rem;
+    }    
+}
